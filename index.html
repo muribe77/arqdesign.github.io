@@ -17,14 +17,24 @@
 
         <div class="contacto-izquierda">
             <h4>ARQ & DESIGN</h4>
-            <img src="img/bandera-mex.webp" alt="bandera-mexico">
-            <p>México<i class="bi bi-telephone-fill"></i>56-10-89-27-34
-                <i class="bi bi-geo-alt-fill"></i>Av. Domicilio Conocido No. 145, Tlalpan, CDMX
-            </p>
+            <div class="mexico">
+                <img src="/build/img/bandera-mex.webp" alt="bandera-mexico">
+                <p>México</p>
+            </div>
+            <div class="domicilio">
+                <div class="telefono">
+                    <span><i class="bi bi-telephone-fill"></i>56-10-89-27-34</span>
+                </div>
+                <div class="direccion">
+                    <i class="bi bi-geo-alt-fill"></i><span></span>Av. Domicilio Conocido No. 145, Tlalpan, CDMX</span>
+                </div>
+            </div>
+
+
         </div>
 
         <div class="contacto-derecha">
-            <nav class="">
+            <nav class="redes">
                 <a href="https://www.facebook.com/?locale=es_LA"><i class="bi bi-facebook"></i></a>
                 <a
                     href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMiLCJteCI6IjIifQ%3D%3D%22%7D"><i
@@ -37,7 +47,7 @@
 
     <header class="header">
 
-        <nav id="navBarSticky">
+        <nav id="navBarSticky" class="navegacion-principal">
             <img class="logo" src="" alt="Logo Arq & Design">
             <ul id="menu">
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -84,7 +94,7 @@
                                 impactantes. Con sede en el corazón de la ciudad,
                                 nuestra firma combina la pasión por el diseño innovador con décadas de
                                 experiencia en la industria. </p>
-                            <img src="img/carrusel1.webp" alt="">
+                            <img src="/build/img/carrusel1.webp" alt="">
                         </div>
                         <div class="item">
                             <h4>SOLUCIONES PERSONALIZADAS</h4>
@@ -92,7 +102,7 @@
                                 estrechamente para ofrecer soluciones personalizadas
                                 que abarcan desde residencias privadas hasta complejos comerciales de gran escala. </p>
 
-                            <img src="img/carrusel2.webp" alt="">
+                            <img src="/build/img/carrusel2.webp" alt="">
                         </div>
                         <div class="item">
                             <h4>DISEÑOS SOSTENIBLES</h4>
@@ -100,7 +110,7 @@
                                 expectativas de nuestros clientes y a enriquecer
                                 comunidades a través de nuestros diseños sostenibles y eficientes en costos.</p>
 
-                            <img src="img/carrusel3.webp" alt="">
+                            <img src="/build/img/carrusel3.webp" alt="">
                         </div>
                         <div class="item">
                             <h4>COMPROMISO CON LA CALIDAD</h4>
@@ -109,7 +119,7 @@
                                 espacio que creamos no solo cumpla, sino que supere las necesidades y aspiraciones de
                                 quienes lo habitan.</p>
 
-                            <img src="img/carrusel4.webp" alt="">
+                            <img src="/build/img/carrusel4.webp" alt="">
                         </div>
                         <div class="item">
                             <h4>INNOVACIÓN Y FUNCIONALIDAD</h4>
@@ -117,7 +127,7 @@
                                 el tiempo y definimos el paisaje
                                 urbano con una estética que combina innovación y funcionalidad. </p>
 
-                            <img src="img/carrusel5.webp" alt="">
+                            <img src="/build/img/carrusel5.webp" alt="">
                         </div>
                     </div>
                     <!--button prev and next-->
@@ -148,13 +158,13 @@
         <h1>Diseño de Espacio, Transportación y Colocación.</h1>
 
         <div class="puntos">
-            <img src="img/puntos.webp" alt="">
+            <img src="/build/img/puntos.webp" alt="">
         </div>
 
         <div class="contenedor-proyecto">
             <div class="tarjeta-proyecto">
-                <div class="icono-proyecto">
-                    <img loading="lazy" src="img/proyecto-arquitectonico2.webp" alt="trabajos tablaroca">
+                <div class="icono-proyecto tarjeta-proyecto__image">
+                    <img loading="lazy" src="/build/img/proyecto-arquitectonico2.webp" alt="trabajos tablaroca">
                 </div>
 
                 <div class="encabezado-proyecto">
@@ -187,7 +197,7 @@
 
             <div class="tarjeta-proyecto">
                 <div class="icono-proyecto">
-                    <img loading="lazy" src="img/proyecto-ejecutivo2.webp" alt="trabajos tablaroca">
+                    <img loading="lazy" src="/build/img/proyecto-ejecutivo2.webp" alt="trabajos tablaroca">
                 </div>
 
                 <div class="encabezado-proyecto">
@@ -213,221 +223,229 @@
 
     <div id="servicios" class="servicios contenedor">
         <h3>[ NUESTROS SERVICIOS ]</h3>
+    </div>
+    <div class="wrapper">
+        <div class="porque">
+            <h2 class="title">¿Por qué elegir Arq & Design?</h2>
+        </div>
+        <div class="contenedor-servicios">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="tarjeta-servicio">
+                <div class="renglon">
+                    <div class="icon">1</div>
+                    <div class="descripcion">
+                        <h4>TABLAROCA</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="tarjeta-servicio">
+                <div class="renglon">
+                    <div class="icon">2</div>
+                    <div class="descripcion">
+                        <h4>SUPERVISIÓN</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="tarjeta-servicio">
+                <div class="renglon">
+                    <div class="icon">3</div>
+                    <div class="descripcion">
+                        <h4>PINTURA INTERIOR</h4>
+                        <p>Renueva tus paredes con colores modernos y duraderos.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4">
+            <label for="c4" class="tarjeta-servicio">
+                <div class="renglon">
+                    <div class="icon">4</div>
+                    <div class="descripcion">
+                        <h4>PINTURA EXTERIOR</h4>
+                        <p>Protege tu casa con nuestros servicios de pintura exterior.</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
 
-        <div class="wrapper">
-            <div class="contenedor-servicios">
-                <input type="radio" name="slide" id="c1" checked>
-                <label for="c1" class="tarjeta-servicio">
-                    <div class="renglon">
-                        <div class="icon">1</div>
-                        <div class="descripcion">
-                            <h4>TABLAROCA</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c2">
-                <label for="c2" class="tarjeta-servicio">
-                    <div class="renglon">
-                        <div class="icon">2</div>
-                        <div class="descripcion">
-                            <h4>SUPERVISIÓN</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c3">
-                <label for="c3" class="tarjeta-servicio">
-                    <div class="renglon">
-                        <div class="icon">3</div>
-                        <div class="descripcion">
-                            <h4>PINTURA INTERIOR</h4>
-                            <p>Renueva tus paredes con colores modernos y duraderos.</p>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c4">
-                <label for="c4" class="tarjeta-servicio">
-                    <div class="renglon">
-                        <div class="icon">4</div>
-                        <div class="descripcion">
-                            <h4>PINTURA EXTERIOR</h4>
-                            <p>Protege tu casa con nuestros servicios de pintura exterior.</p>
-                        </div>
-                    </div>
-                </label>
-            </div>
-            <div class="descripcion-servicios">
-                <h2>Transforma tu hogar</h2>
-                <p>En Arq & Design, nos especializamos en embellecer tus espacios interiores y exteriores con acabados
-                    de alta calidad. </p>
-
-                <p>Nuestro equipo de pintores expertos está dedicado a proporcionar un servicio
-                    meticuloso y cuidadoso, asegurando que cada proyecto sea realizado con precisión y atención al
-                    detalle.</p>
-            </div>
-
+    <div class="contenedor-acordeon">
+        <div class="transforma">
+            <h2 class="">Transforma tu Hogar</h2>
         </div>
 
-        <div class="contenedor-acordeon">
-            <h2 class="title">¿Por qué elegir Arq & Design?</h2>
+        <div class="faq">
+            <div class="question">
+                <h3>Pintura Interior</h3>
 
-            <div class="faq">
-                <div class="question">
-                    <h3>Pintura Interior</h3>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                    </svg>
-                </div>
-
-
-                <div class="answer">
-                    <p>Renueva tus paredes, techos y molduras con colores modernos y duraderos. Utilizamos pinturas
-                        de
-                        primera calidad para obtener resultados excepcionales que transformarán completamente tus
-                        espacios.
-                    </p>
-                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
             </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Pintura Exterior</h3>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                    </svg>
-                </div>
 
 
-                <div class="answer">
-                    <p>Protege y embellece tu casa con nuestros servicios de pintura exterior. Desde la preparación
-                        adecuada hasta la aplicación profesional, te ayudamos a mantener la apariencia y la
-                        integridad estructural de tu hogar.
-                    </p>
-                </div>
+            <div class="answer">
+                <p>Renueva tus paredes, techos y molduras con colores modernos y duraderos. Utilizamos pinturas
+                    de
+                    primera calidad para obtener resultados excepcionales que transformarán completamente tus
+                    espacios.
+                </p>
             </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Preparación Profesional</h3>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Pintura Exterior</h3>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                    </svg>
-                </div>
-
-
-                <div class="answer">
-                    <p>Antes de aplicar la pintura, realizamos una preparación minuciosa que incluye limpieza,
-                        reparación de grietas y lijado, asegurando una superficie lisa y uniforme para un acabado
-                        impecable.
-                    </p>
-                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
             </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Consultoría de Color</h3>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                    </svg>
-                </div>
 
 
-                <div class="answer">
-                    <p>¿No estás seguro de qué colores elegir? Nuestros expertos te ofrecen asesoramiento
-                        personalizado para seleccionar colores que complementen tu estilo y mejoren la atmósfera de
-                        tus espacios.
-                    </p>
-                </div>
+            <div class="answer">
+                <p>Protege y embellece tu casa con nuestros servicios de pintura exterior. Desde la preparación
+                    adecuada hasta la aplicación profesional, te ayudamos a mantener la apariencia y la
+                    integridad estructural de tu hogar.
+                </p>
             </div>
-            <div class="faq">
-                <div class="question">
-                    <h3>Compromiso con la Calidad</h3>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Preparación Profesional</h3>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                    </svg>
-                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
+            </div>
 
 
-                <div class="answer">
-                    <p>Nos comprometemos a utilizar productos de pintura de la más alta calidad y técnicas probadas
-                        para garantizar resultados duraderos y satisfactorios.
-                    </p>
-                </div>
+            <div class="answer">
+                <p>Antes de aplicar la pintura, realizamos una preparación minuciosa que incluye limpieza,
+                    reparación de grietas y lijado, asegurando una superficie lisa y uniforme para un acabado
+                    impecable.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Consultoría de Color</h3>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
+            </div>
+
+
+            <div class="answer">
+                <p>¿No estás seguro de qué colores elegir? Nuestros expertos te ofrecen asesoramiento
+                    personalizado para seleccionar colores que complementen tu estilo y mejoren la atmósfera de
+                    tus espacios.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">
+                <h3>Compromiso con la Calidad</h3>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                </svg>
+            </div>
+
+
+            <div class="answer">
+                <p>Nos comprometemos a utilizar productos de pintura de la más alta calidad y técnicas probadas
+                    para garantizar resultados duraderos y satisfactorios.
+                </p>
             </div>
         </div>
     </div>
 
-    <div id="estudio" class="estudio contenedor">
+
+    <div id="estudio" class="estudio">
         <h3>[ ESTUDIO Y DISEÑO ]</h3>
-
         <div class="corte-laser">
-            <h2 class="laser">CORTE LASER</h2>
-            <div class="contenedor-estudio">
-                <div class="contenedor-card">
-                    <article class="card-article">
-                        <img class="card-imagen" src="img/corte_laser.webp" alt="">
-
-                        <div class="card-datos">
-                            <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
-                            <h2 class="card-title">Corte y Grabado Piezas</h2>
-                            <a href="" class="card-button">Ver Más</a>
-                        </div>
-                    </article>
-                    <article class="card-article">
-                        <img class="card-imagen" src="img/armado_mobiliario.webp" alt="">
-
-                        <div class="card-datos">
-                            <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
-                            <h2 class="card-title">Armado de Mobiliario</h2>
-                            <a href="" class="card-button">Ver Más</a>
-                        </div>
-                    </article>
-                    <article class="card-article">
-                        <img class="card-imagen" src="img/escultura.webp" alt="">
-
-                        <div class="card-datos">
-                            <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
-                            <h2 class="card-title">Esculturas</h2>
-                            <a href="" class="card-button">Ver Más</a>
-                        </div>
-                    </article>
-                    <article class="card-article">
-                        <img class="card-imagen" src="img/trabajos_escolares.webp" alt="">
-
-                        <div class="card-datos">
-                            <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
-                            <h2 class="card-title">Trabajos Escolares</h2>
-                            <a href="" class="card-button">Ver Más</a>
-                        </div>
-                    </article>
-                </div>
+            <div class="marco marco-despues">
+                <h2 class="laser">CORTE LASER</h2>
             </div>
-
         </div>
+        <div class="contenedor-estudio">
+            <div class="contenedor-card">
+                <article class="card-article">
+                    <img class="card-imagen" src="/build/img/laser2.jpg" alt="">
 
+                    <div class="card-datos">
+                        <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
+                        <h2 class="card-title">Corte y Grabado Piezas</h2>
+                        <a href="" class="card-button">Ver Más</a>
+                    </div>
+                    <div class="overlay overlay-tarjetas">
+                        <p>Corte y Grabado Piezas</p>
+                    </div>
+                </article>
+
+                <article class="card-article">
+                    <img class="card-imagen" src="/build/img/armado2.jpg" alt="">
+
+                    <div class="card-datos">
+                        <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
+                        <h2 class="card-title">Armado de Mobiliario</h2>
+                        <a href="" class="card-button">Ver Más</a>
+                    </div>
+                    <div class="overlay overlay-tarjetas">
+                        <p>Armado de Mobiliario</p>
+                    </div>
+                </article>
+                <article class="card-article">
+                    <img class="card-imagen" src="/build/img/esculuras2.jpg" alt="">
+
+                    <div class="card-datos">
+                        <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
+                        <h2 class="card-title">Esculturas</h2>
+                        <a href="" class="card-button">Ver Más</a>
+                    </div>
+                    <div class="overlay overlay-tarjetas">
+                        <p>Esculturas</p>
+                    </div>
+                </article>
+                <article class="card-article">
+                    <img class="card-imagen" src="/build/img/escolares2.jpg" alt="">
+
+                    <div class="card-datos">
+                        <span class="card-descripcion">Lorem ipsum dolor sit amet consectetur</span>
+                        <h2 class="card-title">Trabajos Escolares</h2>
+                        <a href="" class="card-button">Ver Más</a>
+                    </div>
+                    <div class="overlay overlay-tarjetas">
+                        <p>Trabajos Escolares</p>
+                    </div>
+                </article>
+            </div>
+        </div>
         <div class="diseno-grafico">
-            <div class="direccion">
-                <h2 class="grafico">DISEÑO GRÁFICO</h2>
+            <div class="marco marco-antes">
+                <h2 class="laser">DISEÑO GRÁFICO</h2>
             </div>
         </div>
-        <div class="flip-tarjeta">
+
+        <div class="contenedor-estudio diseno">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="img/logotipos.webp" alt="">
+                        <img src="/build//img/logotipos2.jpg" alt="">
 
                     </div>
                     <div class="flip-card-back">
@@ -443,7 +461,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="img/volantes.webp" alt="">
+                        <img src="/build/img/propaganda2.jpg" alt="">
 
                     </div>
                     <div class="flip-card-back">
@@ -456,13 +474,10 @@
                     </div>
                 </div>
             </div>
-
-        </div>
-        <div class="flip-tarjeta">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="img/carteles.webp" alt="">
+                        <img src="/build/img/carteles.webp" alt="">
 
                     </div>
                     <div class="flip-card-back">
@@ -474,14 +489,10 @@
                     </div>
                 </div>
             </div>
-            <div class="descripcion-diseno">
-                <p>Transformando ideas en imágenes impactantes.</p>
-            </div>
         </div>
     </div>
 
-
-
+    
     <div id="contacto" class="contacto">
         <div class="box-info">
             <h2>CONTACTO DIRECTO</h2>
@@ -548,7 +559,7 @@
         </div>
     </footer>
 
-    <script src="bundle.min.js"></script>
+    <script src="/build/js/bundle.min.js"></script>
+    <script src="/build/js/particles.min.js"></script>
 </body>
-
 </html>
